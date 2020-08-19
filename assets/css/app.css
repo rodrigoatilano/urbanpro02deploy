@@ -1,0 +1,376 @@
+body, html {
+	position: relative;
+	/*height: 100%;*/
+}
+@font-face {
+	font-family: "Georgia";
+	src: url("./fonts/Georgia.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Georgia.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("./fonts/Georgia.otf") format("opentype"), /* Open Type Font */
+	url("./fonts/Georgia.svg") format("svg"), /* Legacy iOS */
+	url("./fonts/Georgia.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("./fonts/Georgia.woff") format("woff"), /* Modern Browsers */
+	url("./fonts/Georgia.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Georgia-Bold";
+	src: url("./fonts/GeorgiaBold.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/GeorgiaBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("./fonts/GeorgiaBold.otf") format("opentype"), /* Open Type Font */
+	url("./fonts/GeorgiaBold.svg") format("svg"), /* Legacy iOS */
+	url("./fonts/GeorgiaBold.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("./fonts/GeorgiaBold.woff") format("woff"), /* Modern Browsers */
+	url("./fonts/GeorgiaBold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gotham-Book";
+	src: url("./fonts/Gotham-Book.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("./fonts/Gotham-Book.otf") format("opentype"), /* Open Type Font */
+	url("./fonts/Gotham-Book.svg") format("svg"), /* Legacy iOS */
+	url("./fonts/Gotham-Book.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("./fonts/Gotham-Book.woff") format("woff"), /* Modern Browsers */
+	url("./fonts/Gotham-Book.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Georgia-Italic";
+	src: url("./fonts/GeorgiaItalic.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/GeorgiaItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("./fonts/GeorgiaItalic.otf") format("opentype"), /* Open Type Font */
+	url("./fonts/GeorgiaItalic.svg") format("svg"), /* Legacy iOS */
+	url("./fonts/GeorgiaItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("./fonts/GeorgiaItalic.woff") format("woff"), /* Modern Browsers */
+	url("./fonts/GeorgiaItalic.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gotham-Bold";
+	src: url("./fonts/GothamBold.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/GothamBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("./fonts/GothamBold.otf") format("opentype"), /* Open Type Font */
+	url("./fonts/GothamBold.svg") format("svg"), /* Legacy iOS */
+	url("./fonts/GothamBold.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("./fonts/GothamBold.woff") format("woff"), /* Modern Browsers */
+	url("./fonts/GothamBold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "GothamLight";
+	src: url("./fonts/Gotham-Light.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("./fonts/Gotham-Light.otf") format("opentype"), /* Open Type Font */
+	url("./fonts/Gotham-Light.svg") format("svg"), /* Legacy iOS */
+	url("./fonts/Gotham-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("./fonts/Gotham-Light.woff") format("woff"), /* Modern Browsers */
+	url("./fonts/Gotham-Light.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+.m0 {margin: 0 !important;}
+.mb0 {margin-bottom: 0 !important;}
+.m160 {margin-bottom: 160px !important;}
+
+.p0 {padding: 0 !important;}
+.pt30 {padding-top: 30px !important;}
+
+.fullHeight {height: 100%;}
+.fullWidth {width: 100%;}
+.uppercase {text-transform: uppercase;}
+.minus {
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
+}
+.fontGeorgia{
+	font-family: Georgia;
+}
+.gothamBook{
+	font-family: "Gotham-Book";
+}
+.georgiaItalic{
+	font-family: "Georgia-Italic";
+}
+.gothamBold{
+	font-family: "Gotham-Bold";
+}
+.gothamLight{
+	font-family: "GothamLight";
+}
+.overflow {
+	overflow: hidden;
+}
+.relative {
+	position: relative;
+}
+
+/* VARS */
+:root {
+	--mdc-theme-primary: #ebcd2d;
+	--mdc-theme-secondary: #000000;
+}
+/* END VARS */
+
+nav .brand-logo {
+	height: 64px;
+	color: black;
+	overflow: hidden;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-left: 8px;
+}
+nav .brand-logo img {
+	max-height: 70%;
+	margin-top: 2%;
+}
+nav .sidenav-trigger {
+	float: right;
+}
+nav a {
+	color: #292929;
+}
+nav ul a {
+	color: #292929;
+	font-family: "Georgia-Bold";
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.page-footer {
+	background-color: #282828;
+}
+.page-footer .footer-copyright {
+	background-color: #181818;
+}
+
+.mainTitle {
+	font-family: "Georgia-Bold";
+	background: url("../img/title_bg.jpg") no-repeat left center / 50px 6px;
+	padding-left: 70px;
+	text-transform: uppercase;
+	font-size: 1.44rem;
+}
+.onBanner {
+	color: white;
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-weight: bold;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+}
+.onBannerAbsolute {
+	position: absolute;
+	left: 0;
+	top: 47%;
+}
+.secondaryTitle {
+	font-family: "Georgia-Bold";
+	background: url("../img/secondary_title.png") no-repeat left 9px / 50px auto;
+	padding: 0 0 31px 70px;
+	font-size: 1.44rem;
+}
+.bannerTitle {
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+.onbannerText {
+	color: white;
+	font-size: 20px;
+	font-family: "Gotham-Book";
+	line-height: 1.2;
+}
+
+.slickCtn {
+	padding: 50px 20px;
+	position: relative;
+}
+.slick-prev,
+.slick-next {
+	position: absolute;
+	top: 50%;
+	height: 34px;
+	width: 20px;
+	border: none;
+	background-color: transparent;
+	margin-top: -17px;
+	cursor: pointer;
+}
+.slick-prev:focus,
+.slick-next:focus {
+	background-color: transparent;
+}
+.slick-prev {
+	left: 0;
+	background: url("../img/slick-prev.png") no-repeat center center / cover;
+}
+.slick-next {
+	right: 0;
+	background: url("../img/slick-next.png") no-repeat center center / cover;
+}
+
+.counterCtn {
+	font-family: Georgia;
+	background-color: #bbccf7;
+	padding: 20px 0;
+}
+.counterCtn .counter {
+	font-size: 3rem;
+	font-weight: bold;
+}
+.counterCtn p {
+	margin-top: 0;
+	font-size: 1.2rem;
+}
+
+.projectsCtn .col {
+	padding: 0;
+	position: relative;
+}
+.projectsCtn .col .redBg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(209, 64, 69, .6);
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	padding: 0 20px;
+	color: white;
+	font-weight: bold;
+}
+.projectsCtn .col .redBg:hover {
+	background-color: rgba(209, 64, 69, .8);
+}
+
+.messageCtn p {
+	font-size: 1.3rem;
+	text-align: center;
+	margin: 0;
+	padding: 30px 0;
+}
+.messageCtn .leftMsg {
+	background: url("../img/secondary_title.png") no-repeat left top / 50px auto;
+}
+.messageCtn .rightMsg {
+	background: url("../img/secondary_title_back.png") no-repeat right bottom / 50px auto;
+}
+
+#contectSection {
+	background-color: #eaeaea;
+}
+input:not([type]), 
+input[type=text]:not(.browser-default), 
+input[type=password]:not(.browser-default), 
+input[type=email]:not(.browser-default), 
+input[type=url]:not(.browser-default), 
+input[type=time]:not(.browser-default), 
+input[type=date]:not(.browser-default), 
+input[type=datetime]:not(.browser-default), 
+input[type=datetime-local]:not(.browser-default), 
+input[type=tel]:not(.browser-default), 
+input[type=number]:not(.browser-default), 
+input[type=search]:not(.browser-default), 
+textarea.materialize-textarea {
+	border: 1px solid #a9a9a9;
+	padding: 4px 8px;
+	box-sizing: border-box;
+}
+textarea.materialize-textarea {
+	padding-top: 12px;
+	line-height: 1.15;
+	min-height: 8rem;
+}
+#contactForm button {
+	font-family: Georgia;
+	background-color: #f24f4f;
+	width: 100%;
+}
+
+.projectDataCtn {
+	font-family: Georgia;
+	background-color: #f24f4f;
+	padding: 20px 0;
+	color: white;
+	font-size: 1.3rem;
+}
+.projectDataCtn h5 {
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+.projectDataCtn .col:nth-child(1),
+.projectDataCtn .col:nth-child(2) {
+	border-right: solid 2px red; 
+}
+.projectDataCtn .col:nth-child(2),
+.projectDataCtn .col:nth-child(3) {
+	border-left: solid 2px red; 
+}
+.carousel {
+	max-height: 500px !important;
+}
+
+@media only screen and (max-width: 600px) {
+	nav .brand-logo {
+		height: 56px;
+		left: 0;
+		-webkit-transform: none;
+		transform: none;
+	}
+	nav .brand-logo img {
+		max-height: 50%;
+		margin-top: 5%;
+	}
+	footer .valign-wrapper,
+	.servicesCtn .valign-wrapper {
+		display: block;
+	}
+	footer .col {
+		text-align: center;
+	}
+	.mainTitle {
+		background-size: 40px 5px;
+		padding-left: 50px;
+		font-size: 1.2rem
+	}
+	.secondaryTitle {
+		background-size: 40px auto;
+		background-position: left 6px;
+		padding: 0 0 28px 50px;
+		font-size: 1.2rem
+	}
+	.bannerTitle {
+		font-size: 2rem;
+	}
+	.slick-prev,
+	.slick-next {
+		height: 20px;
+		width: 11px;
+		margin-top: -10px;
+	}
+	.projectsCtn .col .redBg p {
+		margin-bottom: 5px;
+		font-size: 12px;
+	}
+	.projectsCtn .col .redBg h5 {
+		margin: 0;
+		font-size: 1.14rem;
+	}
+	.projectDataCtn {
+		font-size: 1.1rem;
+	}
+	.projectDataCtn .col:nth-child(1) {
+		border-right: none; 
+	}
+	.projectDataCtn .col:nth-child(2) {
+		border-left: none; 
+	}
+	.onBannerAbsolute {
+		top: 38%;
+	}
+}
